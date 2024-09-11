@@ -2,7 +2,7 @@
 using namespace std;
 /*
     Time complexity=O(nlogn);
-    Space Complexity=O(1);
+    Space Complexity=O(n);
 */
 void merge(int ar[], int low, int mid, int high)
 {
