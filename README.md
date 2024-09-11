@@ -8,7 +8,7 @@ This repository contains a collection of all my implementations of various DSA p
 
 ### Contents
 
-- **Sorting Algorithms**: `Quick Sort, Merge Sort, Bubble Sort, etc.`
+- [**Sorting Algorithms**](https://github.com/Error-Nasim/Data-Structure/tree/85bfc10bbb8cbb2b65d76ae23c074a7f827b1cd4/SORTING): `Quick Sort, Merge Sort, Bubble Sort, etc.`
 - **Search Algorithms**: `Binary Search, Linear Search, etc.`
 - **Data Structures**: `Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Maps, etc.`
 - **Dynamic Programming (DP)**: `Famous DP problems and solutions.`
