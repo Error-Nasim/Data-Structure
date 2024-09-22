@@ -12,8 +12,11 @@ void insert(int val)
 
         for (int i = head; i < tail; i++)
         {
-            if (q[i] > q[i + 1])
-                swap(q[i], q[i + 1]);
+            for (int j = i + 1; j <= tail; j++)
+            {
+                if (q[i] > q[j])
+                    swap(q[i], q[j]);
+            }
         }
     }
     else
