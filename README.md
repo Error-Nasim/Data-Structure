@@ -2,9 +2,12 @@
 
 ## You Can Find The Truth In My Code _-_ NASIM
 
+
 Welcome to my **Data Structures and Algorithms (DSA)** Notes! 🚀
 
 This repository contains a collection of all my implementations of various DSA problems and algorithms, which I’ve worked on during my learning journey. The goal of this repo is to serve as a central hub for storing, reviewing, and improving my coding skills, particularly in competitive programming and software development.
+
+### [Complete DSA SHEET](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2) for ultimate practice
 
 ### Contents
 
