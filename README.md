@@ -17,7 +17,7 @@ This repository contains a collection of all my implementations of various DSA p
 - **Dynamic Programming (DP)**: `Famous DP problems and solutions.`
 - **Greedy Algorithms**: `Classic greedy problems and their solutions.`
 - **Graph Algorithms**: `BFS, DFS, Dijkstra’s Algorithm, etc.`
-- **Recursion & Backtracking**: `Practice problems with recursive solutions.`
+- **[Recursion](https://github.com/Error-Nasim/Data-Structure/tree/8aff95c40f0ca87de24bbe06a129e54eafac1f0d/Recursion) & Backtracking**: `Practice problems with recursive solutions.`
 
 ### Why this Repository?
 
