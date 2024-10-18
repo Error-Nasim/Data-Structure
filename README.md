@@ -13,7 +13,7 @@ This repository contains a collection of all my implementations of various DSA p
 
 - [**Sorting Algorithms**](https://github.com/Error-Nasim/Data-Structure/tree/85bfc10bbb8cbb2b65d76ae23c074a7f827b1cd4/SORTING): `Quick Sort, Merge Sort, Bubble Sort, etc.`
 - **[Search Algorithms](https://github.com/Error-Nasim/Data-Structure/tree/26669d4da1ca5f2947af8cc725e77629cf5e9d2c/SEARCHING)**: `Binary Search, Linear Search, etc.`
-- **Data Structures**: ***([Arrays](https://github.com/Error-Nasim/Data-Structure/tree/main/ARRAYS), Linked Lists, [Stacks](https://github.com/Error-Nasim/Data-Structure/tree/main/STACK), [Queues](https://github.com/Error-Nasim/Data-Structure/tree/main/QUEUE), Trees, Graphs, Hash Maps, etc.)***
+- **Data Structures**: ***([Arrays](https://github.com/Error-Nasim/Data-Structure/tree/main/ARRAYS), [Linked Lists](https://github.com/Error-Nasim/Data-Structure/tree/main/LINK%20LIST), [Stacks](https://github.com/Error-Nasim/Data-Structure/tree/main/STACK), [Queues](https://github.com/Error-Nasim/Data-Structure/tree/main/QUEUE), Trees, Graphs, Hash Maps, etc.)***
 - **Dynamic Programming (DP)**: `Famous DP problems and solutions.`
 - **Greedy Algorithms**: `Classic greedy problems and their solutions.`
 - **Graph Algorithms**: `BFS, DFS, Dijkstra’s Algorithm, etc.`
