@@ -10,14 +10,14 @@ int BinarySearch(int ar[], int n, int target)
     {
         int mid = (l + r) / 2;
         if (ar[mid] >= target) // eta ans hote pare or ans obossoi mid er bam dike ache
-                               // ar[mid]>target ei logiv=c dile upper bound ber hobe
+                               // ar[mid]>target ei logic dile upper bound ber hobe
         {
             ans = mid;
             r = mid - 1;
         }
         else
         {
-            // daner half bad diye daner half check korbo karon target mid theke boro
+            // baner half bad diye daner half check korbo karon target mid theke boro
             l = mid + 1;
         }
     }
