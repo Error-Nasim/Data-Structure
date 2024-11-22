@@ -12,6 +12,7 @@ public:
         this->next = NULL;
     }
 };
+
 void insert_at_tail(node *&head, int v)
 {
     node *newNode = new node(v);
@@ -27,63 +28,93 @@ void insert_at_tail(node *&head, int v)
     }
     tmp->next = newNode;
 }
-void insert_at_any_position(node *&head, int pos, int v)
-{
-    node *newNode = new node(v);
-    node *tmp = head;
-    for (int i = 0; i < pos; i++)
-    {
-        tmp = tmp->next;
-        if (tmp == NULL)
-        {
-            cout << "INVALID INDEX!!" << endl;
-            return;
-        }
-    }
-    newNode->next = tmp->next;
-    tmp->next = newNode;
-}
 void insert_at_head(node *&head, int v)
 {
     node *newNode = new node(v);
     newNode->next = head;
     head = newNode;
 }
-void delete_from_position(node *head, int pos)
+void insert_at_any_position(node *&head, int pos, int v)
 {
-    node *tmp = head;
-    for (int i = 0; i < pos; i++)
+    if (pos == 0)
     {
-        tmp = tmp->next;
+        insert_at_head(head, v);
+        return;
+    }
+
+    node *newNode = new node(v);
+    node *tmp = head;
+
+    for (int i = 1; i < pos; i++)
+    {
         if (tmp == NULL)
         {
             cout << "INVALID INDEX!!" << endl;
             return;
         }
+        tmp = tmp->next;
     }
-    if (tmp->next == NULL)
+
+    if (tmp == NULL)
     {
         cout << "INVALID INDEX!!" << endl;
         return;
     }
-    node *deleteNode = tmp->next;
-    tmp->next = tmp->next->next;
-    delete deleteNode;
+
+    newNode->next = tmp->next;
+    tmp->next = newNode;
 }
+
 void delete_head(node *&head)
 {
     if (head == NULL)
     {
-
-        cout << "Head is unavailable !!" << endl;
+        cout << "The list is empty!" << endl;
         return;
     }
     node *deleteNode = head;
     head = head->next;
     delete deleteNode;
 }
+
+void delete_from_position(node *&head, int pos)
+{
+    if (pos == 0)
+    {
+        delete_head(head);
+        return;
+    }
+
+    node *tmp = head;
+    for (int i = 1; i < pos; i++)
+    {
+        if (tmp == NULL || tmp->next == NULL)
+        {
+            cout << "INVALID INDEX!!" << endl;
+            return;
+        }
+        tmp = tmp->next;
+    }
+
+    if (tmp->next == NULL)
+    {
+        cout << "INVALID INDEX!!" << endl;
+        return;
+    }
+
+    node *deleteNode = tmp->next;
+    tmp->next = tmp->next->next;
+    delete deleteNode;
+}
+
 void print(node *head)
 {
+    if (head == NULL)
+    {
+        cout << "The list is empty." << endl;
+        return;
+    }
+
     node *tmp = head;
     while (tmp != NULL)
     {
@@ -92,18 +123,19 @@ void print(node *head)
     }
     cout << endl;
 }
+
 int main()
 {
     node *head = NULL;
 
     while (true)
     {
-        cout << "Option 1: Insert At Tail" << endl;
+        cout << "\nOption 1: Insert At Tail" << endl;
         cout << "Option 2: Insert At Any Position" << endl;
         cout << "Option 3: Insert At Head" << endl;
         cout << "Option 4: Delete From Position" << endl;
         cout << "Option 5: Delete Head" << endl;
-        cout << "Option 6: print Link List" << endl;
+        cout << "Option 6: Print Linked List" << endl;
         cout << "Option 7: Terminate" << endl;
         int op;
         cout << "Enter an option: ";
@@ -120,36 +152,27 @@ int main()
             int v, pos;
             cout << "Enter position: ";
             cin >> pos;
-            cout << " Enter value: ";
+            cout << "Enter value: ";
             cin >> v;
-            if (pos == 0)
-            {
-                insert_at_head(head, v);
-            }
-            else
-            {
-                insert_at_any_position(head, pos, v);
-            }
+            insert_at_any_position(head, pos, v);
         }
         else if (op == 3)
         {
             int v;
-            cout << " Enter value: ";
+            cout << "Enter value: ";
             cin >> v;
             insert_at_head(head, v);
         }
         else if (op == 4)
         {
             int pos;
-            cout << "Enter position to Delete: " << endl;
+            cout << "Enter the position to delete a node: ";
             cin >> pos;
             delete_from_position(head, pos);
-            cout << "Deleted " << pos << "NODE" << endl;
         }
         else if (op == 5)
         {
             delete_head(head);
-            cout << "Head Deleted" << endl;
         }
         else if (op == 6)
         {
@@ -161,7 +184,7 @@ int main()
         }
         else
         {
-            cout << "Wong Input!!" << endl;
+            cout << "Wrong Input!" << endl;
         }
     }
 
