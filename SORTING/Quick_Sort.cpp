@@ -38,14 +38,14 @@ int main()
 {
     int n = 10;
     int ar[n] = {2, 4, 5, 8, 6, 7, 9, 10, 1, 3};
-    cout << "Before Merge sort :";
+    cout << "Before Quick sort :";
     for (int i = 0; i < n; i++)
     {
         cout << ar[i] << " ";
     }
     cout << endl;
     quick_sort(ar, 0, n - 1);
-    cout << "After Merge sort :";
+    cout << "After Quick sort :";
     for (int i = 0; i < n; i++)
     {
         cout << ar[i] << " ";
