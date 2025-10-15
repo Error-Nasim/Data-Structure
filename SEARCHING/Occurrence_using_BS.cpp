@@ -12,11 +12,11 @@ int BinarySearch(int ar[], int n, int target)
         if (ar[mid] == target)
         {
             ans = mid;
-            r = mid - 1; // First occurence ber korbe, pawar poreu check korbo left ki aro ache kina
+            r = mid - 1;  // First occurrence ber korbe, pawar poreu check korbo left ki aro ache kina
 
-            l = mid + 1; //// Last occurence ber korbe, pawar poreu check korbo right ki aro ache kina
+            l = mid + 1;  // Last occurrence ber korbe, pawar poreu check korbo right ki aro ache kina
 
-            // Total Occurence = Last occurence - first occurence + 1 ;;
+            // Total Occurence = Last occurrence - first occurence + 1 ;
         }
         else if (ar[mid] < target)
         {
